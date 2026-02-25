@@ -1,0 +1,8 @@
+scripts:
+  dev:
+    working_dir: src
+    cmd: uvicorn main:app --reload --port 8123
+
+  dev-global-lifespan:
+    working_dir: src
+    cmd: uvicorn mcp_with_global_lifespan:app --reload --port 8123
